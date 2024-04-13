@@ -1,0 +1,110 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(69, 32, 32);
+height: 100vh;
+flex-direction: column;
+}
+.circle{
+    display: flex;
+    overflow: hidden;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: aqua;
+
+}
+.lc{
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    border-radius: 50%;
+
+    animation-name: lc;
+    animation-duration:5s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+.rc{
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    border-radius: 50%;
+    
+    animation-name: rc;
+    animation-duration:5s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.tg{
+   display:flex;
+   justify-content: center;
+   border-radius: 10px;
+   
+    height: 0;
+    width:0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid red;
+    animation-name: tg;
+    animation-duration:5s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-fill-mode: 
+    forwards;
+}
+@keyframes lc{
+0%{
+transform: translateX(0px);
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+25%{
+    transform: translateX(18px);
+}
+50%{
+    transform: translateX(-10px);
+}
+75%{
+    scale: 2;
+}
+100%{
+    transform: translateX(10px);
+}
+}
+@keyframes rc{
+    0%{
+        transform: translateX(0px);
+        }
+        25%{
+            transform: translateX(18px);
+        }
+        50%{
+            transform: translateX(-10px);
+        }
+        75%{
+            scale: 2;
+        }
+        100%{
+            transform: translateX(-10px);
+        }
+    }
+@keyframes tg{
+    from{
+    transform: translateX(0px);
+    transform: rotate(0deg);
+}
+to{
+    transform: translateY(-45px);
+    scale: 1;
+    overflow: hidden;
+    
+    }
+    }
+
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rowdies:wght@300;400;700&display=swap');
+/* body{
+    font-family: 'Caveat',cursive;
+} */
+:root{
+    --font-rowdies: 'Rowdies', sans-serif;
+    --font-caveat: 'Caveat', cursive;
+    --color-green: #25a587;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+font-family:var(--font-rowdies) ;
+}
+html{
+    font-size: 62.5%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#232932, #2c3138, #232932);
+    /* start of navigation */
+}
+.menu-icon{
+    width: 3rem; /* 1 rem = 10 px  */
+    height: 3rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200; 
+}
+.line{
+    width: 100%;
+    height: 0.2rem;
+    background-color: #bbb;
+}
+.navigation{
+    position: fixed;
+    top: -8rem;  
+    /* top */
+    /* right */
+    right: -63rem;
+    width: 50rem;
+    height: 100vh;
+    background-color: #31363c;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 8rem;
+}
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    
+    opacity: 0;
+    /* opacity */
+    /* visibility */
+}
+    /* visibility: hidden; */
+.nav-items a{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0;
+    transition: color 0.3s;
+}
+.nav-items a:hover{
+    color: var(--color-green);
+    
+}
+/* end of navigation */
+/* start of landing */
+.landing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.section-bg-heading{
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 30rem;
+    font-family: var(--font-caveat);
+    color: #31363d;
+    opacity: 0.5;
+}
+.banner{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.dev-img-wrapper{
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    padding: 2rem 2rem 0 2rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);/*horizontal vertical blur  */
+    overflow: hidden;
+    position: relative;
+}
+.dev-img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+/* end of landing */

@@ -1,0 +1,25 @@
+h1{
+
+    /* border: 1px solid green;
+    margin: 60px 30px 50px 40px; */
+    border-width: 15px;
+    border-color: aqua;
+    border-style: outset
+    ;
+    border: 20px solid antiquewhite;
+}
+h2{
+    border: 3px solid brown;
+    padding: 100px ;
+    text-align: center;
+    
+}
+body{
+/* background-image:url("../image/image.jpg");
+background-size: contain
+;
+background-repeat:no-repeat;
+background-position: top right; */
+background:url(../image/img.jpg) no-repeat top right;
+background-size: cover;
+}

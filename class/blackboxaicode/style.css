@@ -1,0 +1,122 @@
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.circle {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    position: relative;
+    background-color: aquamarine;
+   /* add this to position the triangle absolutely */
+}
+
+.lc {
+    height: 100px;
+    background-color: rgba(28, 4, 249, 0.773);
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+     /* add this to position the circle absolutely */
+    left: 0; /* add this to position the circle on the left side */
+
+    animation: lc 1.5s 1 alternate forwards;
+}
+
+.rc {
+    height: 100px;
+    background-color: rgb(21, 230, 6);
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+     /* add this to position the circle absolutely */
+    right: 0; /* add this to position the circle on the right side */
+
+    animation: rc 1.5s 1 alternate forwards;
+}
+
+.tg {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid rgb(0, 0, 0);
+    position: relative;
+     /* add this to position the triangle absolutely */
+    top: 50px; /* add this to position the triangle in the middle of the two circles */
+
+    animation: tg 1.5s 3 alternate
+     forwards;
+}
+
+@keyframes lc {
+    0% {
+        transform: translateX(100px);
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    25% {
+        transform: translateX(18px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+        scale: 2;
+    }
+
+    100% {
+        transform: translateX(48px) translateY(-10px);
+        scale: 0.6;
+    }
+}
+
+@keyframes rc {
+    0% {
+        transform: translateX(0px);
+    scale: -1;
+    }
+
+    25% {
+        transform: translateX(18px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+        scale: 2;
+    }
+
+    75% {
+        transform: translateX(-10px);
+        scale: 2;
+    }
+
+    100% {
+        transform: translateX(-48px) translateY(-10px);
+        scale: 0.6;
+    }
+}
+
+@keyframes tg {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-33px) rotate(1440deg);
+        scale: 0.4;
+        overflow: hidden;
+    }
+}

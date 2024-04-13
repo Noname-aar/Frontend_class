@@ -1,0 +1,6 @@
+div{
+height: 90px;
+border: 5px solid tomato;
+width: 200px;
+overflow-x: scroll;
+}

@@ -1,0 +1,44 @@
+/* .one{
+    max-width: 500px;
+    height: 50vh;
+    background: red;
+}
+
+.two{
+    
+   width: 500px;
+    height: 50vh;
+    background: rgb(31, 13, 197);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+} */
+div{
+width: 200px;
+height: 200px;
+background: darkgoldenrod;
+/* transform: translateX(100px); */
+/* transform: rotate(45deg); */
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+div:hover{
+    transform: rotate(45deg);
+    background-color: blue;
+    transition: all 3s;
+    transform-origin:top right ;
+}
