@@ -108,18 +108,157 @@ html{
     transform: translate(-50%, -50%);
     display: flex;
 }
-.dev-img-wrapper{
-    width: 60rem;
-    height: 60rem;
-    border-radius: 50%;
-    background-color: var(--color-green);
-    padding: 2rem 2rem 0 2rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);/*horizontal vertical blur  */
-    overflow: hidden;
-    position: relative;
+.developer-info{
+    margin-right: 15rem;
 }
-.dev-img-wrapper img{
+.greeting {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1rem;
+  }
+  
+  .greeting span {
+    color: var(--color-green);
+  }
+  
+  .name {
+    font-size: 9rem;
+    width: 60rem;
+    margin: 4rem 0 2rem 0;
+    color: #fff;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .name span {
+    color: var(--color-green);
+  }
+  
+  .prof {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    margin-bottom: 6rem;
+  }
+  
+  .prof span {
+    font-family: var(--font-caveat);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 1.2rem;
+    
+  }
+  
+  .dev-img-wrapper{
+      width: 60rem;
+      height: 60rem;
+      border-radius: 50%;
+      background-color: var(--color-green);
+      padding: 2rem 2rem 0 2rem;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);/*horizontal vertical blur  */
+      overflow: hidden;
+      position: relative;
+  }
+  .dev-img-wrapper img{
+      width: 100%;
+      height: 100%;
+  }
+  .dev-work {
+    width: 25rem;
+    height: 9rem;
+    background-color: #1d222a;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0.2rem solid #bbb;
+    border-radius: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
+  
+  .dev-experience {
+    bottom: 10rem;
+    right: 40rem;
+  }
+  
+  .dev-projects {
+    bottom: 1rem;
+    right: -2rem;
+  }
+  
+  .dev-work span:nth-child(1) {
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .dev-work span:nth-child(2) {
+    color: var(--color-green);
+    width: 50%;
+  }
+  
+  .about {
+    width: 60rem;
+    font-family: var(--font-caveat);
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #a9abae;
+    margin-bottom: 5rem;
+  }
+  
+  .social-media {
+    margin-bottom: 5rem;
+  }
+  
+  .social-media i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .social-media i:hover {
+    color: var(--color-green);
+  }
+  .btn{
+
+    width: 20rem;
+    height: 6rem;
+    border: 2px solid #bbb;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    margin-right: 7rem;
+  }
+  .btn::before{
+    content: "";
     width: 100%;
     height: 100%;
-}
+    background-color: var(--color-green);
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+  }
+  .btn:hover::before{
+    transform: scale(1);
+    transition: .5s;
+  }
+
 /* end of landing */
